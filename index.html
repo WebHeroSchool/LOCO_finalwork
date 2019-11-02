@@ -1,51 +1,58 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>LOCO</title>
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<title>LOCO project</title>
 </head>
 <body>
 	<section class="promo">
 		<header class="header">
     		<div class="header__logo">
-        		<img class="logo" src=".img/LOCO.svg" alt="logo">
+        		<picture class="header__logo-pic">
+        			<source media="(max-widht: 992px)" srcset=".img/LOCO-mob.svg">
+        			<img src=".img/LOCO.svg" alt="LOCO">
+        		</picture>
     		</div>
     		<div class="header__lang">
         		<a class="header__lang-ru" href="">RU</a>
      		</div>
      		<div class="header__menu">
-      			<div class="header__burger">
-       				<span class="header__burger-line"></span>
+      			<div class="header__menu burger">
+       				<span class="burger-line"></span>
 				</div>
       		</div>
 		</header>
-       <div class="wrap">
-       	<div class="promo__img">
-       		<img class="promo__img-main" src=".img/pete-bellis-432867-unsplash%20(2).png" alt="MainPicture">
+       	<div class="promo__wrap">
+       		<div class="promo__img">
+       			<img class="promo__img-main" src=".img/pete-bellis-432867-unsplash.png" alt="MainPicture">
+       		</div>
+       		<div class="promo__title">
+       			<h1 class="promo__title title">Новая коллекция</h1>
+			</div>
+      		<div class="promo__description">
+      			<p class="promo__description description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+      		</div>
+       		<div class="promo__link">
+       			<button class="promo__link button">
+       				<a class="promo__link button button_desc" href="">Читать дальше</a>
+       			</button>
+       			<a class="promo__link link" href="">Другие предложения</a>
+       		</div>
        	</div>
-       	<div class="promo__title">
-       		<h1 class="promo__title title">Новая коллекция</h1>
-		</div>
-      	<div class="promo__description">
-      		<p class="promo__description description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-      	</div>
-       	<div class="promo__link">
-       		<button class="promo__link button">
-       			<a class="promo__link button button_desc" href="">Читать дальше</a>
-       		</button>
-       		<a class="promo__link link" href="">Другие предложения</a>
-       	</div>
-       </div>
-     	<footer class="promo__social">
-     		<div class="promo__social_wrap">
-     			<a class="promo__social_item" href=#><img class="social__item-inst" src=".img/INST.svg" alt="instagram"></a>
-        		<a class="promo__social_item" href=#><img class="social__item-vk" src=".img/VK.svg" alt="vkontakte"></a>
-        		<a class="promo__social_item" href=#><img class="social__item-fb" src=".img/FB.svg" alt="facebook"></a>
+     	<footer class="footer">
+     		<div class="footer__social">
+     			<a class="footer_social_item" href=#><img class="social__item-inst" src=".img/INST.svg" alt="instagram"></a>
+        		<a class="footer_social_item" href=#><img class="social__item-vk" src=".img/VK.svg" alt="vkontakte"></a>
+        		<a class="footer__social_item" href=#><img class="social__item-fb" src=".img/FB.svg" alt="facebook"></a>
         	</div>
-        	<div class="scroll">
-                <div class="promo__scroll"></div>
+        	<div class="footer__scroll">
+                <div class="footer__scroll scroll">
+                	<span class="footer__scroll scroll_line"></span>
+                </div>
             </div>
 		</footer>
     </section>
