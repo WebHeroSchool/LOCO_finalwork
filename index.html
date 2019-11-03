@@ -2,47 +2,62 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>LOCO</title>
-	<link rel="stylesheet" href="./fonts.css">
-	<link rel="stylesheet" href="./style.css">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<title>LOCO project</title>
 </head>
 <body>
-	<header class="header">
-    	<div class="header__logo">
-        	<img class="logo" scr=".img/LOCO.svg" alt="Logo_LOCO">
-    	</div>
-     	<div class="header__lang">
-        	<a class="header__lang-ru" href="">RU</a>
-     	</div>
-     	<div class="header__menu">
-      		<div class="header__burger">
-       			<span class="header__burger-line"></span>
-       			<span class="header__burger-line"></span>
+	<section class="promo">
+		<header class="header">
+    		<div class="header__logo">
+        		<picture class="header__logo-pic">
+        			<img class="header__logo-pic logo_mob" src=".img/LOCO-mob.svg" alt="logo-mob">
+        			<img class="header__logo-pic logo"src=".img/LOCO.svg" alt="LOCO">
+        		</picture>
+    		</div>
+    		<div class="header__lang">
+        		<a class="header__lang-ru" href="">RU</a>
+     		</div>
+     		<div class="header__menu">
+      			<div class="header__menu burger">
+       				<span class="burger-line"></span>
+				</div>
+      		</div>
+		</header>
+       	<div class="promo__wrap">
+       		<picture class="promo__img">
+       			<img class="promo__img-main" src=".img/promo.png" alt="MainPicture">
+       			<img class="promo__img-mob" src=".img/promo-mob.png" alt="MobPicture">
+       		</picture>
+       		<div class="promo__title">
+       			<h1 class="promo__title title title_newcollection">Новая коллекция</h1>
+			</div>
+      		<div class="promo__description">
+      			<p class="promo__description description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+      		</div>
+       		<div class="promo__link">
+       			<button class="promo__link button">
+       				<a class="promo__link button button_desc" href="">Читать дальше</a>
+       			</button>
+       			<a class="promo__link link link_offers" href="">Другие предложения</a>
        		</div>
-     	</div>
-	</header>
-    <section class="promo">
-        <div class="promo__img">
-            <img class="promo__img-main" src=".img/pete-bellis-432867-unsplash.svg" alt="MainPicture">
-      	</div>
-      	<div class="promo__description">
-        	<h1 class="promo__description_title">Новая коллекция</h1>
-        	<p class="promo__description_text">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
-      	</div>
-      	<div class="promo__button">
-        	<button class="promo__button_cont">
-          		<a class="promo__button_desc" href="">Читать дальше</a>
-        	</button>
-      	</div>
-      	<div class="promo__link">
-        	<a class="promo__link_desc" href="">Другие предложения</a>
-      	</div>
-     <div class="promo__social">
-     	<a class="promo__social_item" href=#><img class="social__item-inst" src=".img/INST.svg" alt="instagram"></a>
-        <a class="promo__social_item" href=#><img class="social__item-vk" src=".img/VK.svg" alt="vkontakte"></a>
-        <a class="promo__social_item" href=#><img class="social__item-fb" src=".img/FB.svg" alt="facebook"></a>
-     </div>
-	 </section>
+       	</div>
+     	<footer class="footer">
+     		<div class="footer__social">
+     			<a class="footer_social_item" href=#><img class="social__item-inst" src=".img/INST.svg" alt="instagram"></a>
+        		<a class="footer_social_item" href=#><img class="social__item-vk" src=".img/VK.svg" alt="vkontakte"></a>
+        		<a class="footer__social_item" href=#><img class="social__item-fb" src=".img/FB.svg" alt="facebook"></a>
+        	</div>
+        	<div class="footer__scroll">
+                <div class="footer__scroll scroll">
+                	<span class="footer__scroll scroll_line"></span>
+                </div>
+            </div>
+		</footer>
+    </section>
+	 <!---</section>
      <section class="product">
      	<div class="product__img">
      		<img class="product__img-gray" src=".img/gray.svg" alt="ProductPictureGray">
