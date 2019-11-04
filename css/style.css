@@ -92,13 +92,13 @@ body {
 	transform: translateY(-15px);
  }
 
-@media (min-width: 993px) {
+@media (min-width: 767px) {
 	.header__logo-pic logo_mob {
 		display: none;
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 	.header {
 		display: flex;
 		justify-content: space-between;
@@ -171,16 +171,16 @@ body {
 	margin-top: 15px;
 	height: 12px;
 	width: 44px;
-	background-image: url(../.img/Vector%202.1.svg);
+	background-image: url(../img/Vector%202.1.svg);
 }
 
-@media (min-width: 993px) {
+@media (min-width: 767px) {
 	.promo__img-mob {
 		display: none;
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 	.promo__wrap {
 		display: block;
 		width: 100%;
@@ -265,7 +265,7 @@ body {
 	transform: rotate(90deg);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
 	.footer {
 		display: none;
 	}
