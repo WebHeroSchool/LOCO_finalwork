@@ -103,7 +103,7 @@ body {
 	.header {
 		display: flex;
 		justify-content:space-between;
-		height: 85px;
+		height: 80px;
 		width: 100%;
 		background: #FFF;
 	}
@@ -120,8 +120,8 @@ body {
 	.burger {
 		position: relative;
 		align-self: flex-end;
-		width: 85px;
-		height: 85px;
+		width: 80px;
+		height: 80px;
 	}
 }
 
@@ -200,12 +200,6 @@ body {
 	}
 }
 
-@media (min-width: 560px) and (max-width: 992px) {
-	.promo__title {
-		text-align: center;
-	}
-}
-
 @media (max-width: 992px) {
 	.promo__wrap {
 		display: block;
@@ -231,7 +225,7 @@ body {
 		margin-top: -130px;
     	font-weight: bold;
     	line-height: 51px;
-    	font: normal bold 50px/51px Montserrat;
+    	font: normal bold 35px Montserrat;
 	}
 	
 	.title_newcollection::after {
@@ -253,6 +247,14 @@ body {
 		display: none;
 	}
 }
+
+@media (min-width: 570px) and (max-width: 992px) {
+	.promo__title {
+		font: normal bold 50px Montserrat;
+		text-align: center;
+	}
+}
+
 /*Footer*/
 
 .footer {
