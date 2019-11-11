@@ -1,6 +1,4 @@
 body {
-	min-width: 320px;
-    max-width: 1400px;
     font-family: Montserrat, Arial, sans-serif;
 	margin: 0;
 }
@@ -42,7 +40,7 @@ body {
 }
 
 .header__logo {
-	flex: .5;
+	flex: 0.5;
 }
 
 .header__lang {
@@ -93,7 +91,7 @@ body {
 	transform: translateY(-15px);
  }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
 	.header__logo-pic logo_mob {
 		display: none;
 	}
@@ -103,12 +101,13 @@ body {
 	.header {
 		display: flex;
 		justify-content:space-between;
-		height: 80px;
+		height: 71px;
 		width: 100%;
 		background: #FFF;
 	}
 
 	.header__logo {
+		flex: 1;
 		padding-left: 30px;
 	}
 	
@@ -120,8 +119,8 @@ body {
 	.burger {
 		position: relative;
 		align-self: flex-end;
-		width: 80px;
-		height: 80px;
+		width: 70px;
+		height: 70px;
 	}
 }
 
@@ -194,24 +193,21 @@ body {
 	background-image: url(../img/Vector%202.1.svg);
 }
 
-@media (min-width: 992px) {
-	.promo__img-mob {
-		display: none;
-	}
-}
-
 @media (max-width: 992px) {
-	.promo__wrap {
-		display: block;
-		max-width: 100%;
-		height: auto;
+	.promo {
+		background: #fff;
 	}
 	
-	.promo__img-mob {
-		width: 100%;
-		height: auto;
-		object-fit: cover;
-		object-position: 50% 50%;
+	.promo__wrap {
+		background-image: url(../img/promo-mob.png);
+		background-repeat: no-repeat;
+		max-width: 100%;
+		height: 100%;
+    	background-size: cover;
+    	height: 529px;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
 	}
 	
 	.promo__img-main {
@@ -219,39 +215,30 @@ body {
 	}
 	
 	.promo__title {
-		display: block;
-		z-index: 10;
-        padding-left: 20px;
-		margin-top: -130px;
-    	font-weight: bold;
-    	line-height: 51px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		padding-left: 20px;
     	font: normal bold 35px Montserrat;
 	}
 	
 	.title_newcollection::after {
 		content: "";
 		display: block;
-		position: relative;
+		position: absolute;
 		width: 20px;
 		height: 20px;
 		border-right: 3px solid #000;
         border-top: 3px solid #000;
     	transform: rotate(135deg);
-		margin-left: auto;
-		margin-right: auto;
+		margin-left: 120px;
+		margin-top: 20px;
 		cursor: pointer;
 	}
 	
 	.promo__description,
 	.promo__link {
 		display: none;
-	}
-}
-
-@media (min-width: 570px) and (max-width: 992px) {
-	.promo__title {
-		font: normal bold 50px Montserrat;
-		text-align: center;
 	}
 }
 
