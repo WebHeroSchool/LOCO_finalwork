@@ -99,7 +99,7 @@ body {
     
     .button {
       height: 37px;
-      padding: 0 0 5px;
+      line-height: 37px;
     }
 }
 
@@ -569,6 +569,10 @@ body {
 
 @media (max-width: 480px) {
   
+  .product__wrap {
+    top: 45%;
+  }
+  
   .product__box{
     width: 280px;
     height: 281px;
@@ -576,6 +580,11 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+   .product__wrap {
+    top: 37%;
+  }
+}
 /*Third section*/
 
 .look {
