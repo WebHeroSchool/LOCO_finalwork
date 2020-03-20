@@ -1,0 +1,293 @@
+body {
+    font-family: Montserrat, Arial, sans-serif;
+	margin: 0;
+}
+
+.promo {
+    background: -webkit-linear-gradient(right, #FFF 62%, #000000 38%);
+    background: -o-linear-gradient(right, #FFF 62%, #000000 38%);
+    background: linear-gradient(to left, #FFF 62%, #000000 38%);
+}
+
+.title {
+	font: normal bold 80px/82px Montserrat;
+}
+
+.description {
+	font: normal 15px/21px Montserrat;
+}
+
+.button_desc,
+.link {
+	font: normal 500 13px Montserrat;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.button {
+	background: #FFF;
+	height: 44px;
+	width: 203px;
+}
+
+/*Header*/
+
+.header {
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	flex: 0.5;
+}
+
+.header__lang {
+	flex: 1;
+    display: block;	
+}
+
+.header__lang-ru {
+	font: 20px Montserrat;
+	text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.header__lang-ru::after {
+	content: "";
+	display: inline-block;
+	position: relative;
+	width: 0.4em;
+    height: 0.4em;
+    border-right: 1.5px solid #FFF;
+    border-top: 1.5px solid #FFF;
+    transform: rotate(135deg);
+    margin-left: 10px;
+}
+
+.burger {
+	position: relative;
+	width: 92px;
+	height: 92px;
+	background: #E5E5E5;
+}
+
+.burger-line,
+.burger-line::before{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+    height: 4px;
+	background: #000;
+}
+
+.burger-line::before {
+    content: '';
+	transform: translateY(-15px);
+ }
+
+@media (min-width: 992px) {
+	.header__logo-pic logo_mob {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.header {
+		display: flex;
+		justify-content:space-between;
+		height: 71px;
+		width: 100%;
+		background: #FFF;
+	}
+
+	.header__logo {
+		flex: 1;
+		padding-left: 30px;
+	}
+	
+	.header__logo-pic logo,
+	.header__lang {
+		display: none;
+	}
+	
+	.burger {
+		position: relative;
+		align-self: flex-end;
+		width: 70px;
+		height: 70px;
+	}
+}
+
+	
+/*First section*/
+
+.promo__wrap {
+	display: grid;
+	grid-template-columns: 10% 40% auto;
+	grid-template-rows: 80px repeat(3, auto) 80px;
+}
+
+.promo__img {
+	grid-column: 2;
+	grid-row: 2/5;
+}
+
+.promo__img-main {
+	max-width: 100%;
+	height: auto;	
+}
+
+.promo__title {
+	display: flex;
+	align-items: flex-end;
+	grid-column: 3;
+	grid-row: 2;
+	margin-left: 20px;
+}
+
+.title_newcollection {
+	margin: 0;
+}
+
+.promo__description {
+	display: flex;
+	align-items: center;
+	grid-column: 3;
+	grid-row: 3;
+	margin-left: 20px;
+}
+
+.description_text {
+	margin: 0;
+}
+
+.promo__link {
+	grid-column: 3;
+	grid-row: 4;
+	margin-left: 20px;
+}
+
+.promo__link button {
+	border: 1.5px solid #000;
+	margin: 0;
+}
+
+.button_desc {
+	margin: 0;
+}
+
+.link_offers::after {
+	content: "";
+	display: inline;
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 15px;
+	height: 12px;
+	width: 44px;
+	background-image: url(../img/Vector%202.1.svg);
+}
+
+@media (max-width: 992px) {
+	.promo {
+		background: #fff;
+	}
+	
+	.promo__wrap {
+		background-image: url(../img/promo-mob.png);
+		background-repeat: no-repeat;
+		max-width: 100%;
+		height: 100%;
+    	background-size: cover;
+    	height: 529px;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+	}
+	
+	.promo__img-main {
+		display: none;
+	}
+	
+	.promo__title {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+		padding-left: 20px;
+    	font: normal bold 35px Montserrat;
+	}
+	
+	.title_newcollection::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-right: 3px solid #000;
+        border-top: 3px solid #000;
+    	transform: rotate(135deg);
+		margin-left: 120px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	
+	.promo__description,
+	.promo__link {
+		display: none;
+	}
+}
+
+/*Footer*/
+
+.footer {
+	display: flex;
+	height: 84px;
+	align-items: flex-start;
+}
+
+.footer__social {
+	flex: 1;
+	margin-left: 52px;
+}
+
+.footer_social_item {
+	margin-right: 5px;
+}
+
+.footer__scroll {
+	flex: 1;
+}
+
+.scroll {
+	width: 27px;
+	height: 46px;
+	border: 1.5px solid #000;
+	border-radius: 40px;
+	cursor: pointer;
+}
+
+.scroll_line {
+	display: block;
+	position: absolute;
+	width: 9px;
+    height: 3px;
+	background: #000;
+	margin-top: 10px;
+	margin-left: 9px;
+	transform: rotate(90deg);
+}
+
+@media (max-width: 992px) {
+	.footer {
+		display: none;
+	}
+	
+
+
+
+
